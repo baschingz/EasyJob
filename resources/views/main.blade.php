@@ -4,8 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
+        <title>Easy Job</title>
         <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css')}}"/>
         <script src="{{asset('js/angularjs.min.js')}}"></script>
         <script src="{{asset('js/jquery.js')}}"></script>
@@ -18,7 +17,12 @@
         <nav>
         
         </nav>
+        
         @yield('body')
+
+        <footer>
+        
+        </footer>
         <script src={{asset('js/MainController/MainJs.js')}}></script>
         @yield('script')  
     </body>

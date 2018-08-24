@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('main');
 });
+
+
+Route::get('/requirement', function () {
+    return view('Requirement.Requirement');
+});
+
+Route::get('/register', function () {
+    return view('Register.RegisterForm');
+});
+
