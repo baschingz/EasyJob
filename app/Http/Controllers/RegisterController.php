@@ -7,7 +7,11 @@ use Illuminate\Support\Facades\DB;
 
 class RegisterController extends Controller {
 
-    public function registerMember(Request $data) {
+    public function registerEmployer(Request $data) {
+        
+    }
+
+    public function registerJobSeeker(Request $data) {
         
     }
  
