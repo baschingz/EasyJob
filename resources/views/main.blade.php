@@ -8,6 +8,9 @@
         <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css')}}"/>
         <script src="{{asset('js/angularjs.min.js')}}"></script>
         <script src="{{asset('js/jquery.js')}}"></script>
+        <script type="text/javascript">
+            var base_path = "{{url('/')}}";
+        </script>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
@@ -23,7 +26,7 @@
         <footer>
         
         </footer>
-        <script src={{asset('js/MainController/MainJs.js')}}></script>
+        <script src="{{asset('js/MainController/MainJs.js')}}"></script>
         @yield('script')  
     </body>
 </html>

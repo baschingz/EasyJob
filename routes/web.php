@@ -24,3 +24,9 @@ Route::get('/register', function () {
     return view('Register.RegisterForm');
 });
 
+Route::get('/login', function () {
+    return view('Register.RegisterForm');
+});
+
+Route::post('/register', 'RegisterController@registerMember');
+

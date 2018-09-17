@@ -9,6 +9,6 @@
 @endsection
 
 @section('script')
-
+<script src="{{asset('js/RegisterController/RegisterJs.js')}}"></script>
 @endsection
 

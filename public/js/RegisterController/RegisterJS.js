@@ -4,11 +4,11 @@ app.controller('RegisterController',function($scope,$http){
         debugger;
         var req = {
             params : e,
-            url:'test.php'
+            url:''
         }
-        $http.get(req).then(function(res){
+        $http.get(req).then(function(response){
 
-        },function(res){
+        },function(response){
             alert('fail');
         })
     }
