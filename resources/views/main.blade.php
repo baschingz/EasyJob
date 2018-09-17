@@ -17,10 +17,6 @@
         @yield('import')        
     </head>
     <body>
-        <nav>
-        
-        </nav>
-        
         @yield('body')
 
         <footer>

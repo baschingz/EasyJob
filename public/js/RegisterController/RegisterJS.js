@@ -1,13 +1,27 @@
 app.controller('RegisterController',function($scope,$http){
-    $scope.registerform = null;
-    $scope.save= function(e){
+    $scope.saveEmployer = function(e){
         debugger;
         var req = {
             params : e,
-            url:''
+            url:base_path +'/register/Employer'
         }
-        $http.get(req).then(function(response){
 
+        $http.post(req).then(function(response){
+        
+        },function(response){
+            alert('fail');
+        })
+    }
+
+    $scope.saveJobSeeker = function(e){
+        debugger;
+        var req = {
+            params : e,
+            url:base_path +'/register/JobSeeker'
+        }
+
+        $http.post(req).then(function(response){
+        
         },function(response){
             alert('fail');
         })

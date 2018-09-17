@@ -28,5 +28,6 @@ Route::get('/login', function () {
     return view('Register.RegisterForm');
 });
 
-Route::post('/register', 'RegisterController@registerMember');
+Route::post('/register/Employer', 'RegisterController@registerMember');
 
+Route::post('/register/JobSeeker', 'RegisterController@registerJobSeeker');
