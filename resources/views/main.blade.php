@@ -47,8 +47,12 @@
             </div>
             
         </section>
+
+        <div hidden class='modal'>
         
+        </div>
         
+
         <footer>
         
         </footer>
