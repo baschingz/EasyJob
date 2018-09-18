@@ -21,11 +21,29 @@
 }
 
 .icon-main{
-   margin-top: 5%;
+   margin-top: 10%;
 }
 
 .text-logo-main{
     font-family: 'Quicksand', sans-serif;
     font-size: 5em;
     margin-top: -2%;
+}
+
+.text-easy{
+    color: #e9967a;
+}
+
+.text-job{
+    color: #196985;
+}
+
+.btn-size{
+    width: 10%;
+    background-color: #e9967a;
+}
+
+.btn-text{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5em;
 }

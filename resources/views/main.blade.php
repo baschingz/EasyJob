@@ -42,7 +42,11 @@
                     <img src="{{asset('images/icon/icon-main.png')}}" class="icon-main">
                 </div>
                 <div class="d-flex justify-content-center text-logo-main">
-                    Easy Job
+                    <span class="text-easy">Easy</span> 
+                    <span class="text-job">Job</span>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-default btn-size btn-text">Get Start</button>
                 </div>
             </div>
             
