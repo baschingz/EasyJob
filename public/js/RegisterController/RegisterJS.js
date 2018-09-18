@@ -7,7 +7,11 @@ app.controller('RegisterController',function($scope,$http){
         }
 
         $http.post(req).then(function(response){
-        
+            if(response.data != null){
+                alert('success !!');
+            }else{
+                alert('no data !!');
+            } 
         },function(response){
             alert('fail');
         })
@@ -21,7 +25,11 @@ app.controller('RegisterController',function($scope,$http){
         }
 
         $http.post(req).then(function(response){
-        
+            if(response.data != null){
+                alert('success !!');
+            }else{
+                alert('no data !!');
+            }            
         },function(response){
             alert('fail');
         })
