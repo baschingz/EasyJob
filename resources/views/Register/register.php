@@ -1,19 +1,36 @@
-@extends('main')
+﻿<html lang="en">
 
-@section('body')
-<div>
-    <button id='em'>
-    em
-    </button>
-    <button id='job'>
-    job
-    </button>
-</div>
-<div ng-controller='RegisterController'>
-    <div id='employerForm' >
-    <!-- registere form for employer -->
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymouss">
 
-        <div class="row">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Register -->
+  <div id="accordion">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2 col-md-2 col-xs-2 col-lg-2 col-lg-2"></div>
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+          <p>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#EmployerRegis"
+              aria-expanded="false" aria-controls="EmployerRegis">Employer</button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#JobseekerRegis"
+              aria-expanded="false" aria-controls="JobseekerRegis">Jobseeker</button>
+
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container collapse multi-collapse" id="EmployerRegis" data-parent="#accordion">
+      <div class="row">
         <div class="col-sm-2 col-md-2 col-xs-2 col-lg-2 col-lg-2"></div>
         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
           <br>
@@ -76,9 +93,9 @@
       </div>
     </div>
 
-    <div id='jobseekerForm'  style='display:none;' >
-     <!-- registere form for jobseeker -->
-     <div class="row">
+    <br>
+    <div class="container collapse multi-collapse" id="JobseekerRegis" data-parent="#accordion">
+      <div class="row">
         <div class="col-sm-2 col-md-2 col-xs-2 col-lg-2 col-lg-2"></div>
         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
 
@@ -114,27 +131,14 @@
         </div>
       </div>
     </div>
-    </div>
-</div>
-@endsection
+  </div>
+  <br><br><br><br><br><br><br><br><br>
 
-@section('script')
-<script src="{{asset('js/RegisterController/RegisterJs.js')}}"></script>
-<script>
-$(function(){
-     var em = $('#employerForm');
-     var job = $('#jobseekerForm');
 
-     $('#em').click(function(){
-        em.css('display','block');
-        job.css('display','none');
-     });
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
 
-     $('#job').click(function(){
-        em.css('display','none');
-        job.css('display','block');
-     });
-});
-</script>
-@endsection
-
+</html>
