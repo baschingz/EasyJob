@@ -8,13 +8,11 @@
         <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css')}}"/>
         <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap-grid.css')}}"/>
         <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap-reboot.css')}}"/>
-        <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/>
 
-      
+        <link href="https://fonts.googleapis.com/css?family=Kanit:200,300,400,500" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Kanit:200,300,400,500|Quicksand:300,400,500" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         
-        <link rel="shortcut icon" href="{{asset('images/icon/icon-title.png')}}" />
-
         <script src="{{asset('js/angularjs.min.js')}}"></script>
         <script src="{{asset('js/jquery.js')}}"></script>
         <script type="text/javascript">
@@ -28,38 +26,17 @@
     <body>
         @yield('body')
 
-        <section class="section-navigator">
-            <header>
-                <nav class="navbar navbar-light bg-light text-nav">
-                    <a class="navbar-brand" href="#">Easy Job</a>
-                </nav>
-            </header>
-        </section>
-
-        <section class="section-cover">
-            <div class="cover-image">
-                <div class="d-flex justify-content-center">
-                    <img src="{{asset('images/icon/icon-main.png')}}" class="icon-main">
-                </div>
-                <div class="d-flex justify-content-center text-logo-main">
-                    Easy Job
-                </div>
-            </div>
-            
-        </section>
-
-        <div hidden class='modal'>
+        <header>
         
-        </div>
-        
+        </header>
 
+        
         <footer>
         
         </footer>
         <script src="{{asset('js/MainController/MainJs.js')}}"></script>
         <script src="{{asset('js/bootstrap.bundle.js')}}"></script>
         <script src="{{asset('js/bootstrap.js')}}"></script>
-        <script src="{{asset('js/LoginController/LoginJs.js')}}"></script>
         @yield('script')  
     </body>
 </html>
