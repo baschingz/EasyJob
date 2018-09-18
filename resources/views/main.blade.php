@@ -48,12 +48,14 @@
             
         </section>
         
+        
         <footer>
         
         </footer>
         <script src="{{asset('js/MainController/MainJs.js')}}"></script>
         <script src="{{asset('js/bootstrap.bundle.js')}}"></script>
         <script src="{{asset('js/bootstrap.js')}}"></script>
+        <script src="{{asset('js/LoginController/LoginJs.js')}}"></script>
         @yield('script')  
     </body>
 </html>
