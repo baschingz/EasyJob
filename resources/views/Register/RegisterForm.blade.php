@@ -121,20 +121,22 @@
 @section('script')
 <script src="{{asset('js/RegisterController/RegisterJs.js')}}"></script>
 <script>
-$(function(){
-     var em = $('#employerForm');
-     var job = $('#jobseekerForm');
+    $(function(){
+        var em = $('#employerForm');
+        var job = $('#jobseekerForm');
 
-     $('#em').click(function(){
-        em.css('display','block');
-        job.css('display','none');
-     });
+        $('#em').click(function(){
+            em.slideDown(500);
+            em.css('display','block');
+            job.css('display','none');
+        });
 
-     $('#job').click(function(){
-        em.css('display','none');
-        job.css('display','block');
-     });
-});
+        $('#job').click(function(){
+            job.slideDown(500);
+            em.css('display','none');
+            job.css('display','block');
+        });
+    });
 </script>
 @endsection
 

@@ -28,6 +28,10 @@ Route::get('/login', function () {
     return view('Register.RegisterForm');
 });
 
+Route::get('/manage', function () {
+    return view('Manage.Notification');
+});
+
 Route::post('/register/Employer', 'RegisterController@registerMember');
 
 Route::post('/register/JobSeeker', 'RegisterController@registerJobSeeker');
