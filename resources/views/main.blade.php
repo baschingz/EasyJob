@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css')}}"/>
         <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap-grid.css')}}"/>
         <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap-reboot.css')}}"/>
+        <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/>
 
         <link href="https://fonts.googleapis.com/css?family=Kanit:200,300,400,500" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Kanit:200,300,400,500|Quicksand:300,400,500" rel="stylesheet">
@@ -24,31 +25,15 @@
         @yield('import')        
     </head>
     <body>
-        @yield('body')
-
-        <header>
         
-        </header>
-
-<<<<<<< HEAD
-        <section class="section-cover">
-            <div class="cover-image">
-                <div class="d-flex justify-content-center">
-                    <img src="{{asset('images/icon/icon-main.png')}}" class="icon-main">
-                </div>
-                <div class="d-flex justify-content-center text-logo-main">
-                    <span class="text-easy">Easy</span> 
-                    <span class="text-job">Job</span>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <button class="btn btn-default btn-size btn-text">Get Start</button>
-                </div>
-            </div>
-            
+        <section class="section-navbar">
+            <header>
+                <nav class="navbar navbar-light bg-light text-nav">
+                    <a class="navbar-brand" href="#">Easy Job</a>
+                </nav>
+            </header>
         </section>
-=======
->>>>>>> 989d61eade9cfe6c904cc066463ff57b0a7722c8
-        
+        @yield('body')
         <footer>
         
         </footer>

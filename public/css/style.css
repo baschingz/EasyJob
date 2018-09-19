@@ -1,18 +1,17 @@
 .cover-image{
     width:100%;
     height: 690px;
-    background-image: url("../images/cover/cover-main2.jpg");
+    background-image: url("../images/cover/cover-main2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
 
-
 .text-nav a{
     font-family: 'Quicksand', sans-serif;
     color: white;
-    font-size: 2em;
+    font-size: 1.7em;
     font-weight: 500;
 }
 
@@ -28,10 +27,11 @@
     font-family: 'Quicksand', sans-serif;
     font-size: 5em;
     margin-top: -2%;
+    font-weight: 700;
 }
 
 .text-easy{
-    color: #e9967a;
+    color: #F08080;
 }
 
 .text-job{
@@ -39,8 +39,9 @@
 }
 
 .btn-size{
-    width: 10%;
-    background-color: #e9967a;
+    width: 100%;
+    background: linear-gradient(to bottom, #F08080 0%, #FFA07A 100%);
+    color: #fff;
 }
 
 .btn-text{
