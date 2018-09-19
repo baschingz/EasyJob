@@ -14,6 +14,18 @@ class CreateImageJobSeeker extends Migration
     public function up()
     {
         //
+        Schema::create('imageJobSeeker', function(Blueprint $table){
+            $table->increments('image_jseeker_id');
+            $table->longText('image_data')->charset('utf8');
+            $table->unsignedInteger('jobseek_id');
+
+            $table->foreign('jobseek_id')
+                  ->references('jobseek_id')->on('job_seeker')
+                  ->onDelete('cascade');
+        });
+        
+
+
     }
 
     /**
@@ -24,5 +36,6 @@ class CreateImageJobSeeker extends Migration
     public function down()
     {
         //
+        Schema::dropIfExists('imageJobSeeker');
     }
 }

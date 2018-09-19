@@ -14,6 +14,15 @@ class CreateImageEmployer extends Migration
     public function up()
     {
         //
+        Schema::create('imageEmployer', function(Blueprint $table){
+            $table->increments('image_employer_id');
+            $table->longText('image_data')->charset('utf8');
+            $table->unsignedInteger('employer_id');
+
+            $table->foreign('employer_id')
+                  ->references('employer_id')->on('employer')
+                  ->onDelete('cascade');
+        });
     }
 
     /**
@@ -24,5 +33,6 @@ class CreateImageEmployer extends Migration
     public function down()
     {
         //
+        Schema::dropIfExists('imageEmployer');
     }
 }
