@@ -1,14 +1,142 @@
 @extends('main')
 
 @section('body')
+<div>
+    <button id='em'>
+    em
+    </button>
+    <button id='job'>
+    job
+    </button>
+</div>
 <div ng-controller='RegisterController'>
-<input ng-model="registerform.name" type="text">
-<input ng-model="registerform.email" type="text">
-<input ng-click="save(registerform)">
+    <div id='employerForm' >
+    <!-- registere form for employer -->
+
+        <div class="row">
+        <div class="col-sm-2 col-md-2 col-xs-2 col-lg-2 col-lg-2"></div>
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+          <br>
+
+          <div>
+            <h2>Employee</h2>
+            <br>
+            <div class="form-row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="ชื่อ">
+              </div>
+            </div>
+            <br>
+
+            <div class="form-row">
+              <div class="col">
+                <input type="text" class="form-control" id="nameShop" placeholder="ชื่อร้าน">
+              </div>
+            </div>
+            <br>
+
+            <div class="form-row">
+              <div class="col">
+                <input type="text" class="form-control" id="address" placeholder="ที่อยู่ร้าน">
+              </div>
+            </div>
+            <br>
+
+            <div class="form-row">
+              <div class="col-4">
+                <select class="form-control">
+                  <option>ร้านนม</option>
+                  <option>ร้านข้าว</option>
+                  <option>ร้านขนม</option>
+                </select>
+              </div>
+
+              <div class="col">
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+              </div>
+
+            </div>
+            <br>
+
+            <div class="form-row">
+              <div class="col-4">
+                <input type="text" class="form-control" id="phonenumber" placeholder="เบอร์โทรร้าน">
+              </div>
+
+              <div class="col">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Enter email">
+              </div>
+
+            </div>
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id='jobseekerForm'  style='display:none;' >
+     <!-- registere form for jobseeker -->
+     <div class="row">
+        <div class="col-sm-2 col-md-2 col-xs-2 col-lg-2 col-lg-2"></div>
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+
+          <h2>Jobseeker</h2>
+          <br>
+
+          <div class="form-row">
+            <div class="col-8">
+              <input type="text" class="form-control" placeholder="ชื่อ">
+            </div>
+
+            <div class="col">
+              <input type="number" class="form-control" placeholder="อายุ">
+            </div>
+          </div>
+          <br>
+          <div class="form-row">
+            <div class="col-7">
+              <input type="number" class="form-control" placeholder="เบอร์โทรศัพท์">
+            </div>
+            <div class="col">
+              <select class="form-control">
+                <option>ชาย</option>
+                <option>หญิง</option>
+                <option>อื่นๆ</option>
+              </select>
+            </div>
+          </div>
+
+          <label for="exampleFormControlTextarea1"> รูปถ่าย </label>
+          <input type="file" class="form-control-file" id="exampleFormControlFile1">
+
+        </div>
+      </div>
+    </div>
+    </div>
 </div>
 @endsection
 
 @section('script')
 <script src="{{asset('js/RegisterController/RegisterJs.js')}}"></script>
+<script>
+    $(function(){
+        var em = $('#employerForm');
+        var job = $('#jobseekerForm');
+
+        $('#em').click(function(){
+            em.slideDown(500);
+            em.css('display','block');
+            job.css('display','none');
+        });
+
+        $('#job').click(function(){
+            job.slideDown(500);
+            em.css('display','none');
+            job.css('display','block');
+        });
+    });
+</script>
 @endsection
 

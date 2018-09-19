@@ -4,10 +4,9 @@ var app = angular.module('myApp', [], function ($interpolateProvider) {
 });
 
 app.controller('MainController',function($scope,$http){
-    
-    
+
         alert('join');
-    
+        
 });
 
 $(function(){
