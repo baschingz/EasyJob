@@ -15,8 +15,8 @@
         </div>  
         <div class="d-flex justify-content-center">
             <div class="col-sm-2">
-                <button class="btn btn-default btn-text btn-size">Login</button>
-                <button class="btn btn-default btn-text btn-size">Register</button>
+                <button class="btn btn-default btn-text btn-size"  data-toggle="modal" data-target="#exampleModalLong">Sign In</button>
+                <a href="http://localhost:8000/register"><button class="btn btn-default btn-text btn-size" >Register</button></a>
             </div>
         </div>          
     </div>
@@ -25,6 +25,8 @@
 @endsection
 
 @section('script')
-
+<script>
+    
+</script>
 @endsection
 

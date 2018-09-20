@@ -27,25 +27,57 @@
 </head>
 
 <body>
-
+<div ng-controller='MainController'> 
     <section class="section-navbar">
         <header>
             <nav class="navbar navbar-light bg-light text-nav">
+                <button type="button" class="btn btn-login" data-toggle="modal" data-target="#exampleModalLong">
+                    Sign In
+                </button>
                 <!-- <a class="navbar-brand" href="#">Easy Job</a> -->
             </nav>
         </header>
     </section>
 
     <!-- modal sign in -->
-    <!-- <div class="modal-body">
-        <h5>Sign in</h5>
-        <p>This <a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title" data-content="Popover body content is set in this attribute.">button</a>
-            triggers a popover on click.</p>
-        <hr>
-        <h5>Tooltips in a modal</h5>
-        <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that
-                link</a> have tooltips on hover.</p>
-    </div> -->
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="" >Sign In</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Email address</label>
+                        <input type="text" class="form-control" ng-model='formSignIn.email'  placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" class="form-control" ng-model='formSignIn.password' placeholder="Password">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" >
+                        <label class="form-check-label" for="exampleCheck1">Remember</label>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-login" ng-click='signIn(formSignIn)'>Sign In</button>
+                    <button type="button" class="btn btn-login" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
     @yield('body')
     <footer>
@@ -55,6 +87,7 @@
     <script src="{{asset('js/bootstrap.bundle.js')}}"></script>
     <script src="{{asset('js/bootstrap.js')}}"></script>
     @yield('script')
+    </div>
 </body>
 
 </html>

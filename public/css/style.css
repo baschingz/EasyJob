@@ -49,3 +49,9 @@
     font-family: 'Quicksand', sans-serif;
     font-size: 1.5em;
 }
+
+.btn-login{
+    background: linear-gradient(to bottom, #F08080 0%, #FFA07A 100%);
+    color: #fff;
+    text-align: right;
+}
