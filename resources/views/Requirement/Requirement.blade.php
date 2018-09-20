@@ -73,12 +73,6 @@
   </div>
 </div>
 
-<!-- <script>
-$(function(){
-  $("#EmployerRegis").slideDown("slow");
-});
-</script> -->
-
 <script type="text/javascript">
   function delbtn(e) {
 
