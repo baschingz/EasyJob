@@ -89,8 +89,4 @@
     @yield('script')
     </div>
 </body>
-<<<<<<< HEAD
-
-=======
->>>>>>> 70394610be0315dabcedea0f4227e32fb1f7faf7
 </html>
