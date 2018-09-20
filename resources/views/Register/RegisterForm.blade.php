@@ -114,7 +114,6 @@
             <div class="col-sm-7 ml-auto">
               <input type="submit" class="btn btn-success" id="submit" value="SUBMIT">
             </div>
-          </div>
         </div>
       </div>
     </div>

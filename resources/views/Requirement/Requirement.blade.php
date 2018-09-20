@@ -1,9 +1,9 @@
 @extends('main')
 
 @section('body')
-<div class="cover-image"  id="requirementEmployee">
+<div class="cover-image" >
   <br>
-  <div class="container form-border" data-parent="#accordion">
+  <div class="container form-border" id="requirementEmployee" data-parent="#accordion">
     <div class="row">
       <div class="col-sm-2 col-md-2 col-xs-2 col-lg-2 col-lg-2"></div>
       <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
@@ -14,21 +14,23 @@
           <br>
           <div class="form-row">
             <div class="col">
-              <input type="text" class="form-control" placeholder="อายุ">
+              <input type="text" class="form-control" placeholder="อายุ" autofocus>
             </div>
             <div class="col">
-              <select class="form-control">
+            <input list="type_work" class="form-control" placeholder="เพศ"/>
+              <datalist id="type_work">
                 <option>ชาย</option>
                 <option>หญิง</option>
                 <option>ชายและหญิง</option>
-              </select>
+              </datalist>
             </div>
             <div class="col">
-              <select class="form-control">
+            <input list="type_work" class="form-control"  placeholder="ประเภทงาน"/>
+              <datalist id="type_work">
                 <option>แม่บ้าน</option>
                 <option>หญิง</option>
                 <option>ชายและหญิง</option>
-              </select>
+              </datalist>
             </div>
             <div class="col">
               <input type="text" class="form-control" placeholder="บาท/ชั่วโมง">
@@ -73,18 +75,20 @@
   </div>
 </div>
 
+<<<<<<< HEAD
+=======
+<!-- <script>
+$(function(){
+  $("#EmployerRegis").slideDown("slow");
+});
+</script> -->
+>>>>>>> aba82d7492ddea62925396894df0da49d975e6a2
 <script type="text/javascript">
   function delbtn(e) {
 
     var deletebtn = document.getElementById(e.id)
     deletebtn.remove()
   }
-  $(window).load(function () {
-    $("requirementEmployee").show("slide", {
-      direction: "up"
-    }, 1000);
-  });
-
 
   $(document).ready(function () {
 
@@ -100,6 +104,7 @@
 
   });
 </script>
+
 
 @endsection
 
