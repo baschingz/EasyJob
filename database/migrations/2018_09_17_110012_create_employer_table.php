@@ -16,7 +16,7 @@ class CreateEmployerTable extends Migration
         Schema::create('employer', function (Blueprint $table) {
             $table->increments('employer_id');
             $table->string('name', 100)->charset('utf8')->default(0);
-            $table->longText('address')->charset('utf8')->default(0);
+            $table->longText('address')->charset('utf8');
             $table->string('type', 100)->charset('utf8')->default(0);
             $table->string('tel', 100)->charset('utf8')->default(0);
             $table->string('email', 100)->charset('utf8')->unique();
