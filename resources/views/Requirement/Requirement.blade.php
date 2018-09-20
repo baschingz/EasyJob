@@ -75,14 +75,6 @@
   </div>
 </div>
 
-<<<<<<< HEAD
-=======
-<!-- <script>
-$(function(){
-  $("#EmployerRegis").slideDown("slow");
-});
-</script> -->
->>>>>>> aba82d7492ddea62925396894df0da49d975e6a2
 <script type="text/javascript">
   function delbtn(e) {
 
