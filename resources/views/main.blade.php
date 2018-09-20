@@ -11,7 +11,6 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap-reboot.css')}}" />
     <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}" />
 
-    <link href="https://fonts.googleapis.com/css?family=Kanit:200,300,400,500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kanit:200,300,400,500|Quicksand:300,400,500" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -30,21 +29,15 @@
 <div ng-controller='MainController'> 
     <section class="section-navbar">
         <header>
-            <nav class="navbar navbar-light bg-light text-nav">
-                
+            <nav class="navbar navbar-light bg-light text-nav">                
                 <a class="navbar-brand" href="http://localhost:8000">Easy Job</a>
-                <button type="button" class="btn btn-login" data-toggle="modal" data-target="#exampleModalLong">
-                    Sign In
-                </button>
-
+                <button type="button" class="btn btn-login" data-toggle="modal" data-target="#exampleModalLong">Sign In</button>
             </nav>
         </header>
     </section>
 
     <!-- modal sign in -->
     <!-- Button trigger modal -->
-
-
     <!-- Modal -->
     <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
         aria-hidden="true">
@@ -72,7 +65,6 @@
 
                 </div>
                 <div class="modal-footer">
-
                     <button type="button" class="btn btn-login" ng-click='signIn(formSignIn)'>Sign In</button>
                     <button type="button" class="btn btn-login" data-dismiss="modal">Close</button>
 

@@ -13,10 +13,13 @@
             <span class="text-easy">Easy</span>
             <span class="text-job">Job</span>
         </div>  
-        <div class="d-flex justify-content-center">
-            <div class="col-sm-2">
-                <button class="btn btn-default btn-text btn-size"  data-toggle="modal" data-target="#exampleModalLong">Sign In</button>
-                <a href="http://localhost:8000/register"><button class="btn btn-default btn-text btn-size" >Register</button></a>
+        <div class="d-flex justify-content-center text-slogan-main">
+            get job &#8226; good job
+        </div> 
+        <div class="d-flex justify-content-center button-main-top">
+            <div class="col-sm-2 text-btn">
+                <a href="#" class="btn btn-default btn-text btn-size-pink"  data-toggle="modal" data-target="#exampleModalLong">Sign In</a>
+                <a href="http://localhost:8000/register" class="btn btn-default btn-text btn-size-blue">Register</a>
             </div>
         </div>          
     </div>

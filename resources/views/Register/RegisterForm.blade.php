@@ -1,125 +1,194 @@
 @extends('main')
 
 @section('body')
-<style>
-  button.btn{
-    border-radius: 45%;
-  }
-</style>
-<div class="cover-image">
-  <hr class="my-4">
-  <div class="col-sm-7 ml-auto">
-    <button id='em' class="btn btn-info btn-lg">EMPLOYEE</button>
-    <button id='job' class="btn btn-primary btn-lg">JOBSEEKER</button>
-  </div>
-  <hr class="my-4">
-  <div ng-controller='RegisterController'>
-    <div id='employerForm'>
-      <!-- registere form for employer -->
-      <div class="row">
-        <div class="col-sm-2 col-md-2 col-xs-2 col-lg-2 col-lg-2"></div>
-        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 form-border" >
-          <br>
-          <h2 style="padding: 6px; padding-left: 20px;">Employee</h2>
-          <div>
-            <div class="form-row">
-              <div class="col">
-                <input type="text" class="form-control" placeholder="ชื่อ">
-              </div>
-            </div>
-            <br>
-            <div class="form-row">
-              <div class="col">
-                <input type="text" class="form-control" id="nameShop" placeholder="ชื่อร้าน">
-              </div>
-            </div>
-            <br>
-            <div class="form-row">
-              <div class="col">
-                <input type="text" class="form-control" id="address" placeholder="ที่อยู่ร้าน">
-              </div>
-            </div>
-            <br>
-            <div class="form-row">
-              <div class="col-4">
-                <select class="form-control">
-                  <option>ร้านนม</option>
-                  <option>ร้านข้าว</option>
-                  <option>ร้านขนม</option>
-                </select>
-              </div>
-              <div class="col">
-                <input type="file" class="form-control-file" id="exampleFormControlFile1">
-              </div>
-            </div>
-            <br>
-            <div class="form-row">
-              <div class="col-4">
-                <input type="text" class="form-control" id="phonenumber" placeholder="เบอร์โทรร้าน">
-              </div>
-              <div class="col">
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                  placeholder="Enter email">
-              </div>
-            </div>
-            <br>
-            <div class="form-row">
-              <div class="col-sm-7 ml-auto">
-                <input type="submit" class="btn btn-success" id="submit" value="SUBMIT">
-              </div>
-            </div>
-            <br>
-          </div>
-        </div>
+<section class="section-register">
+  <div class="container top">
+    <div class="row justify-content-center">
+      <div class="col-sm-3">
+        <a href="" id='em' class="btn btn-default btn-text btn-size-pink">Employee</a>
       </div>
-    </div>
-    <div id='jobseekerForm' style='display:none;'>
-      <!-- registere form for jobseeker -->
-      <div class="row">
-        <div class="col-sm-2 col-md-2 col-xs-2 col-lg-2 col-lg-2"></div>
-        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 form-border">
-          <br>
-          <h2 style="padding: 6px; padding-left: 20px;" onloadedmetadata="" onloadedmetadata="" onloadedmetadata="">Jobseeker</h2>
-          <div>
-            <div class="form-row">
-              <div class="col-8">
-                <input type="text" class="form-control" placeholder="ชื่อ">
-              </div>
-              <div class="col">
-                <input type="number" class="form-control" placeholder="อายุ">
-              </div>
-            </div>
-            <br>
-            <div class="form-row">
-              <div class="col-7">
-                <input type="number" class="form-control" placeholder="เบอร์โทรศัพท์">
-              </div>
-              <div class="col">
-                <select class="form-control">
-                  <option>ชาย</option>
-                  <option>หญิง</option>
-                  <option>อื่นๆ</option>
-                </select>
-              </div>
-            </div>
-            <label for="exampleFormControlTextarea1"> รูปถ่าย </label>
-            <input type="file" class="form-control-file" id="exampleFormControlFile1">
-            <div class="form-row">
-              <div class="col-sm-7 ml-auto">
-                <input type="submit" class="btn btn-success" id="submit" value="SUBMIT">
-              </div>
-            </div>
-            <br>
-          </div>
-        </div>
+      <div class="col-sm-3">
+        <a href="" id='job' class="btn btn-default btn-text btn-size-blue">JobSeeker</a>
       </div>
     </div>
 
+    <div class="row form-register-top">
+      <div class="col-sm-6">
+        <div class="row justify-content-center">
+          <div class="col-sm-12">
+            <img src="{{asset('images/img/img1.jpg')}}" class="size-img-register">
+          </div>          
+        </div>
+      </div>
+      
+      <div class="col-sm-6" ng-controller='RegisterController'>
+        <form name="Employee">
+          <div id='employerForm'>
+            <div class="row text-topic-register">
+              <div class="col-sm-12">
+                Employee  
+              </div>                           
+            </div>
+            <hr>  
+            <div class="row justify-content-center">
+              <div class="col-sm-8">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                  </div>
+                  <input type="text" class="form-control text-input-register" placeholder="ชื่อ">
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-sm-8">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text width-group"><i class="fa fa-shopping-basket" aria-hidden="true"></i></span>
+                  </div>
+                  <input type="text" class="form-control text-input-register" id="nameShop" placeholder="ชื่อร้าน">
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-sm-8">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                  </div>
+                  <input type="text" class="form-control text-input-register" id="address" placeholder="ที่อยู่ร้าน">
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-sm-8">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01"><i class="fa fa-shopping-cart" aria-hidden="true"></i></label>
+                  </div>
+                    <select class="custom-select text-input-register">
+                      <option value="" disabled selected>เลือกประเภทร้าน</option>
+                      <option value="">ร้านนม</option>
+                      <option value="">ร้านข้าว</option>
+                      <option value="">ร้านขนม</option>
+                    </select>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-sm-8">
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input">
+                  <label class="custom-file-label">Choose file...</label>
+                </div>
+              </div>
+            </div>
+            <div class="row top-regis justify-content-center">
+              <div class="col-sm-8">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                  </div>
+                  <input type="text" class="form-control text-input-register" id="phonenumber" placeholder="เบอร์โทรร้าน">
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-sm-8">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                  </div>
+                  <input type="email" class="form-control text-input-register"  placeholder="อีเมล">
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-sm-5">
+                <a href="" class="btn btn-default btn-text btn-size-regis">Register</a>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <!-- registere form for jobseeker -->
+        <form name="Jobseeker" style='display:none;'>
+          <div id='jobseekerForm'>
+            <div class="row text-topic-register">
+                <div class="col-sm-12">
+                  Job Seeker  
+                </div>                           
+              </div>
+              <hr>  
+              <div class="row justify-content-center">
+                <div class="col-sm-8">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                    </div>
+                    <input type="text" class="form-control text-input-register" placeholder="ชื่อ">
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-sm-8">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
+                    </div>
+                    <input type="text" class="form-control text-input-register" placeholder="อายุ">
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+              <div class="col-sm-8">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                  </div>
+                  <input type="text" class="form-control text-input-register" id="phonenumber" placeholder="เบอร์โทรศัพท์">
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-sm-8">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01"><i class="fa fa-user-circle" aria-hidden="true"></i></label>
+                  </div>
+                    <select class="custom-select text-input-register">
+                      <option value="" disabled selected>เพศ</option>
+                      <option value="">ชาย</option>
+                      <option value="">หญิง</option>
+                      <option value="">อื่นๆ</option>
+                    </select>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-sm-8">
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input"></label>
+                  <label class="custom-file-label">Choose file...</label>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center top-regis">
+              <div class="col-sm-5">
+                <a href="" class="btn btn-default btn-text btn-size-regis">Register</a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
 
-  @endsection
+</section>
 
-  @section('script')
+@endsection
+
+@section('script')
   <script src="{{asset('js/RegisterController/RegisterJs.js')}}"></script>
   <script>
     $(function () {
@@ -135,8 +204,8 @@
       $('#job').click(function () {
         job.slideDown(500);
         em.css('display', 'none');
-        job.css('display', 'block');
+        job.css('display', 'show');
       });
     });
   </script>
-  @endsection
+@endsection
