@@ -49,3 +49,9 @@
     font-family: 'Quicksand', sans-serif;
     font-size: 1.5em;
 }
+
+.form-border{
+    border-radius: 25px;
+    border: 2px solid black;
+    background-color: rgba(0,0,0 ,0.2);
+}
