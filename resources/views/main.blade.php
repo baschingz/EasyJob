@@ -11,7 +11,7 @@
 
         <link href="https://fonts.googleapis.com/css?family=Kanit:200,300,400,500" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Kanit:200,300,400,500|Quicksand:300,400,500" rel="stylesheet">
-        
+
         <script src="{{asset('js/angularjs.min.js')}}"></script>
         <script src="{{asset('js/jquery.js')}}"></script>
         <script type="text/javascript">
@@ -20,22 +20,22 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
-        @yield('import')        
+        @yield('import')
     </head>
     <body>
         @yield('body')
 
         <header>
-        
+
         </header>
 
-        
+
         <footer>
-        
+
         </footer>
         <script src="{{asset('js/MainController/MainJs.js')}}"></script>
         <script src="{{asset('js/bootstrap.bundle.js')}}"></script>
         <script src="{{asset('js/bootstrap.js')}}"></script>
-        @yield('script')  
+        @yield('script')
     </body>
 </html>
