@@ -31,10 +31,12 @@
     <section class="section-navbar">
         <header>
             <nav class="navbar navbar-light bg-light text-nav">
+                
+                <a class="navbar-brand" href="#">Easy Job</a>
                 <button type="button" class="btn btn-login" data-toggle="modal" data-target="#exampleModalLong">
                     Sign In
                 </button>
-                <!-- <a class="navbar-brand" href="#">Easy Job</a> -->
+                
             </nav>
         </header>
     </section>
