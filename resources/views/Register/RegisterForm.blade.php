@@ -2,12 +2,6 @@
 
 @section('body')
 <style>
-  div.inputreg{
-    padding: 60px;
-    background-color: #DCDCDC;
-    /* opacity: 0.6;
-    filter: alpha(opacity=60); */
-  }
   button.btn{
     border-radius: 45%;
   }
@@ -26,8 +20,8 @@
         <div class="col-sm-2 col-md-2 col-xs-2 col-lg-2 col-lg-2"></div>
         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 form-border" >
           <br>
-          <h2 style="background-color: pink; margin-bottom: 0px; padding: 6px; padding-left: 20px;">Employee</h2>
-          <div class="inputreg">
+          <h2 style="padding: 6px; padding-left: 20px;">Employee</h2>
+          <div>
             <div class="form-row">
               <div class="col">
                 <input type="text" class="form-control" placeholder="ชื่อ">
@@ -83,11 +77,10 @@
       <!-- registere form for jobseeker -->
       <div class="row">
         <div class="col-sm-2 col-md-2 col-xs-2 col-lg-2 col-lg-2"></div>
-        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 form-border">
           <br>
-          <h2 style="background-color: pink; margin-bottom: 0px; padding: 6px; padding-left: 20px;" onloadedmetadata=""
-            onloadedmetadata="" onloadedmetadata="">Jobseeker</h2>
-          <div class="inputreg">
+          <h2 style="padding: 6px; padding-left: 20px;" onloadedmetadata="" onloadedmetadata="" onloadedmetadata="">Jobseeker</h2>
+          <div>
             <div class="form-row">
               <div class="col-8">
                 <input type="text" class="form-control" placeholder="ชื่อ">
@@ -116,6 +109,7 @@
                 <input type="submit" class="btn btn-success" id="submit" value="SUBMIT">
               </div>
             </div>
+            <br>
           </div>
         </div>
       </div>
