@@ -15,7 +15,8 @@
         </div>  
         <div class="d-flex justify-content-center">
             <div class="col-sm-2">
-                <button class="btn btn-default btn-text btn-size">Get start</button>
+                <button class="btn btn-default btn-text btn-size">Login</button>
+                <button class="btn btn-default btn-text btn-size">Register</button>
             </div>
         </div>          
     </div>
