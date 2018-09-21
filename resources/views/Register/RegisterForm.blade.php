@@ -5,7 +5,7 @@
   <div class="container top">
     <div class="row justify-content-center">
       <div class="col-sm-3">
-        <a href="" id='em' class="btn btn-default btn-text btn-size-pink">Employee</a>
+        <a href="" id='em' class="btn btn-default btn-text btn-size-pink">Employer</a>
       </div>
       <div class="col-sm-3">
         <a href="" id='job' class="btn btn-default btn-text btn-size-blue">JobSeeker</a>
