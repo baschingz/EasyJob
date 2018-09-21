@@ -23,6 +23,9 @@
     background-image: linear-gradient(#F08080,#FFA07A);
 }
 
+.navbar {
+   background: rgba(255, 255, 255, 0.5);
+}
 .icon-main{
    margin-top: 7%;
 }
