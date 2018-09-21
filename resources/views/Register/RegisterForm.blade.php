@@ -22,8 +22,8 @@
       </div>
       
       <div class="col-sm-6" ng-controller='RegisterController'>
-        <form name="Employee">
-          <div id='employerForm'>
+        <form name="Employee" id='employerForm'>
+          <div >
             <div class="row text-topic-register">
               <div class="col-sm-12">
                 Employee  
@@ -112,8 +112,8 @@
         </form>
 
         <!-- registere form for jobseeker -->
-        <form name="Jobseeker" style='display:none;'>
-          <div id='jobseekerForm'>
+        <form name="Jobseeker"  id='jobseekerForm' style='display:none;'>
+          <div>
             <div class="row text-topic-register">
                 <div class="col-sm-12">
                   Job Seeker  
